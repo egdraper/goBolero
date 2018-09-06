@@ -1,0 +1,13 @@
+User managment page
+<div>Being Shipped:</div>
+<div>Next Flavor: "Coconut"</div>
+<button (click)="onSwitchFlavorClick()">Switch Flavor</button>
+<div *ngIf="changeFlavor">
+    <mat-form-field >
+        <mat-select placeholder="Select first 3 Flavors">
+            <mat-option value="option">Coconut</mat-option>
+            <mat-option value="option">Elder Berry</mat-option>
+            <mat-option value="option">American Express</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

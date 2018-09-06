@@ -1,0 +1,64 @@
+<div class="new-user-container">
+    <mat-form-field>
+      <input matInput placeholder="Email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Re-Enter Password">
+    </mat-form-field>
+    <mat-form-field>    
+    <mat-select placeholder="Subscription length">
+        <mat-option value="option">3 months</mat-option>
+        <mat-option value="option">6 months</mat-option>
+        <mat-option value="option">1 year</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+    <mat-select placeholder="Quantity Per Week">
+        <mat-option value="option">Custom</mat-option>
+        <mat-option value="option">7 packages</mat-option>
+        <mat-option value="option">14 packages</mat-option>
+        <mat-option value="option">28 packages</mat-option>
+        
+      </mat-select>
+    </mat-form-field>
+
+    <div>Monthly Total:</div>
+    <button (click)="onNextClick()">Next</button>
+</div>
+
+<div class="new-user-container">
+    <mat-form-field>
+        <mat-select placeholder="Select first 3 Flavors">
+          <mat-option value="option">Coconut</mat-option>
+          <mat-option value="option">Elder Berry</mat-option>
+          <mat-option value="option">Elder Flower</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    <button (click)="onNextClick()">Next</button>
+</div>
+
+<div class="new-user-container">
+    <mat-form-field>
+      <mat-select placeholder="Select first 3 Flavors">
+        <mat-option value="option">Visa</mat-option>
+        <mat-option value="option">Master Card</mat-option>
+        <mat-option value="option">American Express</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Credit Card Number">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Experation">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="CSV #">
+    </mat-form-field>
+        
+
+    <button (click)="onNextClick()">Next</button>
+</div>

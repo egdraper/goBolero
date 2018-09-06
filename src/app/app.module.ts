@@ -12,11 +12,15 @@ import { HttpClientModule } from '@angular/common/http';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CreateNewAccountComponent } from './client/create-new-account/create-new-account.component';
+import { HomeComponent } from './client/home/home.component';
+import { UserLoginRoutingModule } from './client/user-login/user-login-routing.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserAnimationsModule,
